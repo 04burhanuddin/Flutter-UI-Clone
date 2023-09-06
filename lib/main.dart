@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_clone/whatsapp/shared/color_constants.dart';
+import 'package:flutter_ui_clone/whatsapp/whatsapp.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,11 +14,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(
-            onBackground: Colors.blue, seedColor: Colors.blueGrey),
+        colorScheme:
+            ColorScheme.fromSeed(onBackground: Colors.blue, seedColor: gray),
         useMaterial3: true,
       ),
-      home: const Screen(),
+      home: const WhatsAppExample(),
     );
   }
 }
